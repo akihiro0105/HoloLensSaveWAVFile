@@ -36,6 +36,7 @@ namespace SaveWAVFile
                 var tail = Microphone.GetPosition(null);
                 if (tail > 0 && head != tail)
                 {
+                    list.Clear();
                     audioClip.GetData(databuffer, 0);
                     while (true)
                     {
